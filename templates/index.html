@@ -1,0 +1,248 @@
+{% extends "main_layout.html"%}
+{% block content %}
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="{{ url_for('static', filename='img/Logo.png') }}" alt="" width="100%" height="50px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mx-2 ">
+            <a class="nav-link active" aria-current="page" href="#">BERANDA</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#layanan">LAYANAN</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#price">HARGA</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#quotes">TESTIMONI</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#footer">KONTAK</a>
+          </li>
+        </ul>
+
+        <div>
+          <i class="fa fa-map-marker" aria-hidden="true"><span> Bojongsoang</span></i>
+        </div>
+      </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-md-6 title" >
+        <h1><strong>Tentang <br> Just's Click Laundry</strong></h1>
+        <p>Kami adalah laundry yang menawarkan kemudahan sekaligus secara online, tanpa perlu khawatir biaya antar jemput, gratis untuk Anda.</p>
+        
+        <a href="https://wa.me/+6281324874436?text=Halo%20Bapak%20Ibu%20Just%20Click%20Laundry" target="_blank" class="mr-4"><button class="button-primary">Order Sekarang </button> <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></a>
+      </div>
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='img/img-hero.png') }}" width="500px">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYANAN -->
+<section id="layanan">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 text-s">
+            <h1>Pelayanan terbaik <br> visi kami</h1>
+        </div>
+        <div class="col-lg-6 col-md-12 text-s">
+          <p>Kami mengutamakan kepuasan pelanggan dan memberikan pelayanan terbaik.</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-7 col-sm-12 mt-3">
+          <div class="box-layanan1">
+            <p>MODERN SERVICES</p>
+            <h2>Pelayanan Mudah <br>dengan <br> Adaptasi Teknologi</h2>
+            <div style="margin-top: 120px;">
+              <a href="#"><button class="btn-primary-custom">Coba sekarang <span><i class="fa fa-arrow-up rotates"></i></span></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+          <div class="col-lg-12 col-sm-12 mt-3">
+            <div class="box-layanan2">
+              <p>Menggunakan sabun yang terbaik untuk pakaian Anda</p>
+              <div class="mt-5">
+                <h5>Jaminan Bersih <br> dan Wangi</h5>
+                <div class="position-relative">
+                  <div class="position-absolute end-0">
+                    <i class="fa fa-arrow-up rotates" style="color: black;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-sm-12 mt-3">
+            <div class="box-layanan3">
+              <p>Dengan alat setrika uap canggih</p>
+              <div class="mt-5">
+                <h5>Pakaian rapi <br> dan tidak luntur</h5>
+                <div class="position-relative">
+                  <div class="position-absolute end-0 mt-3">
+                    <i class="fa fa-arrow-up rotates" style="color: black;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-12 mt-3">
+          <div class="box-layanan4">
+            <p>Laundry lebih hemat</p>
+              <div style="margin-top:270px">
+                <h5>Gratis Antar Jemput</h5>
+                <div class="position-relative">
+                  <div class="position-absolute end-0">
+                    <i class="fa fa-arrow-up rotates" style="color: black;"></i>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section id="fitur">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <div class="box-fitur">
+        </div>
+        <div class="box-fitur2 text-center align-middle">
+          <p>Semua jadi lebih gampang, dan hemat</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <div class="row">
+          <h1><strong>Gratis Antar Jemput, Harga Paling Murah</strong></h1>
+          <p class="mt-2">Nikmati keunggulan laundry dengan harga yang ekonomis dan layanan gratis antar jemput dari kami. Hemat waktu dan biaya Anda dengan laundry yang mudah dan praktis bersama kami. </p>
+          <p class="mt-2"><i class="fa-solid fa-circle-check" style="color: #8fb8ff;"></i> Cuci Hemat, layanan premium</p>
+          <p><i class="fa-solid fa-circle-check" style="color: #8fb8ff;"></i> Hemat biaya, hemat waktu</p>
+          <p><i class="fa-solid fa-circle-check" style="color: #8fb8ff;"></i> Laundry pintar, hemat budget</p>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 170px;">
+      <div class="col-lg-6 col-sm-12" style="padding-right: 20px;">
+        <div class="row">
+          <h1><strong>Kenapa Laundry kami berbeda?</strong></h1>
+          <p class="mt-2">
+            Laundry kami menggunakan teknologi modern dan ramah lingkungan untuk memberikan hasil cucian yang bersih, harum, dan lebih awet dibandingkan laundry lain.
+          </p>
+          <div class="box-fitur3"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <div class="box-fitur4">
+          <iframe src="https://www.youtube.com/embed/3TOV4ZNXJ9s?autoplay=1&mute=1" frameborder="0" width="100%" height="100%" style="border-radius: 20px;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="price">
+   <div class="container">
+    <div class="row text-center mt-5">
+        <h2><strong>Cuci kilat, hemat seketika! <br> Laundry kami menawarkan harga terjangkau</strong></h2>
+    </div>
+    <div class="row mt-5 ms-5">
+      <div class="row">
+        <div class="box-title-price"></div>
+      </div>
+        <div class="box-price1"></div>
+        <div class="box-price2"></div>
+        <div class="box-price3"></div>
+    </div>
+   </div>
+</section>
+
+<section id="quotes">
+  <div class="container">
+    <div class="row">
+      <h1>Pelanggan adalah prioritas <br>utama kami</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="row mt-4">
+      <div class="col-4">
+        <div class="box-quotes"></div>
+      </div>
+      <div class="col-7 mt-4">
+        <h2>"Kualitas pencucian yang terjamin, dengan harga murah"</h2>
+        <h4 class="mt-5">- Teh Cici</h4>
+        <p>Pelanggan Just's Click Laundry</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="footer">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-7">
+        <img src="../static/img/icon.png" style="width: 50px;">
+      </div>
+      <div class="col-3 text-end align-self-center">
+        <p style="margin:0">Mau coba sekarang?</p>
+      </div>
+      <div class="col-2 align-self-center">
+        <button class="btn-primary-custom2">Coba Sekarang</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="line-footer mb-5"></div>
+      <div class="row">
+        <div class="col-3">
+          <h5>Hubungi Kami</h5>
+          <i class="pull-left fab fa-whatsapp" style="color: #ffffff;"></i>
+          <span style="font-weight:200"> 081-324-874-436</span>
+          <br>
+          <i class="pull-left fab fa-instagram mt-3" style="color: #ffffff;"></i>
+          <span style="font-weight:200"> @justclicklaundry</span>
+          <br>
+          <i class="pull-left fa fa-globe mt-3" style="color: #ffffff;"></i>
+          <span style="font-weight:200"> justclicklaundry.com</span>
+        </div>
+        <div class="col-3">
+          <h5>Layanan</h5>
+          <div class="row"><p>Pencucian Kering</p></div>
+          <div class="row"><p>Pencucian Basah</p></div>
+          <div class="row"><p>Pencucian Sepatu</p></div>
+          <div class="row"><p>Pencucian Tas</p></div>
+          <div class="row"><p>Pencucian Express</p></div>
+        </div>
+        <div class="col-6">
+          <h5>Temukan Kami</h5>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=GBA 1 Bojongsoang&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <a href="https://2yu.co">2yu</a><br>
+              <style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style>
+              <a href="https://embedgooglemap.2yu.co/">html embed google map</a>
+              <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
